@@ -14,4 +14,4 @@ El proyecto utiliza los siguientes plugin.
 | ------ | ------ |
 |  barryvdh/laravel-dompdf  | [https://github.com/barryvdh/laravel-dompdf][PlDb] |
 
-   [PlDb]: <https://github.com/cviebrock/eloquent-sluggable/tree/7.x>
+   [PlDb]: <https://github.com/barryvdh/laravel-dompdf>
