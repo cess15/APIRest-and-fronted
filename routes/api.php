@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\ReservationController;
-use App\Models\Reservation;
+use App\Http\Controllers\Api\GuestController;
+use App\Http\Controllers\Api\StudentController;
+use App\Http\Controllers\Api\ReservationController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -20,4 +21,7 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
+Route::apiResource('students', StudentController::class);
+Route::apiResource('guests', GuestController::class);
+Route::apiResource('reservations', ReservationController::class);
 Route::get('reservations/{reservation}/pdf', [ReservationController::class, 'generate']);
